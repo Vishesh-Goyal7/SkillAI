@@ -36,4 +36,4 @@ print("✅ Accuracy:", accuracy_score(y_test, y_pred))
 print("\n📊 Classification Report:\n", classification_report(y_test, y_pred, target_names=le.classes_))
 
 joblib.dump(model, "cluster_model_xgb.pkl")
-print("💾 Model saved as 'cluster_model_xgb_shap.pkl'")
+print("💾 Model saved as 'cluster_model_xgb.pkl'")

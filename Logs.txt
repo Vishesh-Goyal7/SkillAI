@@ -39,20 +39,28 @@
 18-07-2025 03:44:43:
         2.9) Fifth attempt : 
             2.9.1) Going to use a DNN model to make predictions hoping for better accuracy.
+            2.9.2) Result : No better accuracy. Still hitting the limit of 36.28% which ain't better. So, the final step now is to use the best xgboost model to identify top 3 clusters and creating DNN for each cluster to find 2 most suitable jobs within those clusters. So, in total we get one xgb model for predicting clusters and 7 dnn models to identify jobs within that cluster.
+
+18-07-2025 03:58:31:
+        2.10) Sixth attempt : 
+            2.10.1) Going to use the latest xgb model that gave 35% accuracy as the base model to select top three clusters. Then, we will train 7 dnn models that specialise in each cluster to predict 2 jobs per cluster. 
             
             
 
 All files : 
-    1) Dataset/Occupation_Data.txt and Skills.txt : Raw data from ONet : https://www.onetcenter.org/database.html
-    2) Dataset/unique_job_list.csv : List of all unique 845 jobs in our database 
-    3) Phase1_Model_Creation/career_profiles.csv : Randomly created job profiles with interests, skills and job labels
-    4) Phase1_Model_Creation/clustered_job_titles.csv : Classifying the jobs into suitable clusters
-    5) Phase1_Model_Creation/final_dataset.csv : Merging 3 and 4
-    6) Phase1_Model_Creation/P1_brainA1.py : First attempt in making the model. Reference 2.5
-    7) Phase1_Model_Creation/P1_brainA2.py : Second attempt in making the model. Reference 2.6
-    7) Phase1_Model_Creation/P1_brainA3S1.py : Third attempt in making the model. Reference 2.7
-    8) Phase1_Model_Creation/P1_merger.py : Merging 3 and 4
-    9) Phase1_Model_Creation/P1_SHAP_model.py : Reference 2.8
-    9) Phase1_Model_Creation/P1_Job_Title_Clustering.py : Semantic analysis to classify the jobs into clusters 
-    10) Preprocess/Get_Unique.py : Get list of all unique jobs
-    11) Preprocess/Profile_Generator.py : Generate random profiles (150 per job title)
+    Dataset/Occupation_Data.txt and Skills.txt : Raw data from ONet : https://www.onetcenter.org/database.html
+    Dataset/unique_job_list.csv : List of all unique 845 jobs in our database 
+    Phase1_Model_Creation/career_profiles.csv : Randomly created job profiles with interests, skills and job labels
+    Phase1_Model_Creation/clustered_job_titles.csv : Classifying the jobs into suitable clusters
+    Phase1_Model_Creation/final_dataset.csv : Merging 3 and 4
+    Phase1_Model_Creation/P1_brainA1.py : First attempt in making the model. Reference 2.5
+    Phase1_Model_Creation/P1_brainA2S1.py : Second attempt in making the model. Reference 2.6
+    Phase1_Model_Creation/P1_brainA3S1.py : Third attempt in making the model. Reference 2.7
+    Phase1_Model_Creation/P1_brainA4S1.py : Fourth attempt. Reference 2.8
+    Phase1_Model_Creation/P1_dnn_A1.py : Fifth attemp. Reference 2.9
+    Phase1_Model_Creation/P1_Job_Title_Clustering.py : Semantic analysis to classify the jobs into clusters 
+    Phase1_Model_Creation/P1_merger.py : Merging 3 and 4
+    Phase1_Model_Creation/P1_SHAP_model.py : Recurating the dataset to remove unnecessary noise. Reference 2.8.1. Prerequisite for step 2.8.
+    Phase1_Model_Creation/shap_feature_importance.csv : List of features and their contribution. 
+    Preprocess/Get_Unique.py : Get list of all unique jobs
+    Preprocess/Profile_Generator.py : Generate random profiles (150 per job title)
