@@ -1,0 +1,6 @@
+pandas
+xgboost
+scikit-learn
+joblib
+matplotlib 
+sentence-transformers
