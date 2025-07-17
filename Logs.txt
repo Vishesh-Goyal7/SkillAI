@@ -21,6 +21,24 @@
 17-07-2025 04:19:53:
         2.6) Second attempt :
             2.6.1) First painful step was to make cluster of all the jobs. Took almost 3 hours but it is done now. Was idiotically doing it manually but then, I realised a semantic analysis can be done for all the jobs. 
+            2.6.2) Failure yet again. Accuracy barely crossed 17% for stage 1 cluster identification. After that, tried to remove the interests columns, reducing the number of clusters, reducing the number of profiles but still no success.
+            2.6.3) Probable reason : Skills are too overlapping to make a proper segregation. 
+            2.6.4) Update for next step : Select top 500 career paths. Selection criterion is that most number of skills are required and if two jobs have same number of skills, the importance level should be considered. 
+
+17-07-2025 22:09:41:
+        2.7) Third attempt :
+            2.7.1) This time, the number of jobs would be limited to 250 and 7 clusters. 
+            2.7.2) Drastically better results. Sudden sweet jump from 13-14% to almost 36%. 
+            2.7.3) Next step for better results : Use SHAP to identify which features help the most in model training to reduce the noise in the dataset.
+
+18-07-2025 02:54:13:
+        2.8) Fourth attempt : 
+            2.8.1) Using the SHAP to find out the most contributing features and removing the unnecessary ones to reduce the noise. 
+            2.8.2) Result : Still same. No visible difference in increased accuracy. So, two solutions possible are using the current 35% accuracy as a base model and predicting the job which increases the accuracy to upto 60-70% but this ain't enough. So, let this be a fall back option and going to try a deep neural network for now. If the Deep neural network fails, fall back to current 35% as the base model. 
+        
+18-07-2025 03:44:43:
+        2.9) Fifth attempt : 
+            2.9.1) Going to use a DNN model to make predictions hoping for better accuracy.
             
             
 
@@ -32,7 +50,9 @@ All files :
     5) Phase1_Model_Creation/final_dataset.csv : Merging 3 and 4
     6) Phase1_Model_Creation/P1_brainA1.py : First attempt in making the model. Reference 2.5
     7) Phase1_Model_Creation/P1_brainA2.py : Second attempt in making the model. Reference 2.6
+    7) Phase1_Model_Creation/P1_brainA3S1.py : Third attempt in making the model. Reference 2.7
     8) Phase1_Model_Creation/P1_merger.py : Merging 3 and 4
+    9) Phase1_Model_Creation/P1_SHAP_model.py : Reference 2.8
     9) Phase1_Model_Creation/P1_Job_Title_Clustering.py : Semantic analysis to classify the jobs into clusters 
     10) Preprocess/Get_Unique.py : Get list of all unique jobs
     11) Preprocess/Profile_Generator.py : Generate random profiles (150 per job title)

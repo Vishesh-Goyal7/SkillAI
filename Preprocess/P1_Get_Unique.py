@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("Model_Creation/combined_career_profiles.csv")
+df = pd.read_csv("../Phase1_Model_Creation/career_profiles.csv")
 df = df["label"]
 
 jobs = []
@@ -12,4 +12,4 @@ for i in df:
         jobs.append(i)
 
 df = pd.DataFrame(jobs)
-df.to_csv("unique_job_list.csv", index=False)
+df.to_csv("../Dataset/unique_job_list.csv", index=False)

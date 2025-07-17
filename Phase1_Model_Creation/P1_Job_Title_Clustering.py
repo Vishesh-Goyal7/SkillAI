@@ -11,7 +11,7 @@ job_titles = df['job_title'].tolist()
 model = SentenceTransformer("all-MiniLM-L6-v2")
 embeddings = model.encode(job_titles, show_progress_bar=True)
 
-num_clusters = 100
+num_clusters = 7
 kmeans = KMeans(n_clusters=num_clusters, random_state=42)
 df['cluster'] = kmeans.fit_predict(embeddings)
 

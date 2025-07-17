@@ -1,0 +1,29 @@
+feature,mean_abs_shap
+Science,0.24888976
+edu_Bachelors,0.24217741
+edu_Masters,0.20945454
+Negotiation,0.14858927
+Persuasion,0.1462461
+Operations Monitoring,0.13882653
+Mathematics,0.12974317
+Systems Evaluation,0.12781633
+Writing,0.1102499
+Instructing,0.09282863
+Management of Financial Resources,0.07790028
+Technology Design,0.050272312
+Active Listening,0.047843464
+Programming,0.04428892
+edu_PhD,0.043128777
+Repairing,0.040632848
+Learning Strategies,0.040165864
+Critical Thinking,0.039066523
+Equipment Maintenance,0.038879946
+Complex Problem Solving,0.038128268
+Speaking,0.03619162
+Monitoring,0.035876527
+Troubleshooting,0.032202587
+edu_Diploma,0.023414817
+Quality Control Analysis,0.022930387
+Social Perceptiveness,0.020323148
+Management of Personnel Resources,0.020298628
+Active Learning,0.020069094

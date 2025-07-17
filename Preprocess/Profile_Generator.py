@@ -36,10 +36,34 @@ for _, row in skills_df.iterrows():
     occupation_skills[job_title].append(skill)
 
 all_skills = list(set(skills_df["Element Name"]))
+
+MOST_IMPORTANT_JOBS = {
+    "Data Scientists",
+    "Machine Learning Engineers",
+    "AI Research Scientists",
+    "Software Developers",
+    "Cybersecurity Analysts",
+    "UX Designers",
+    "Product Managers",
+    "Surgeons",
+    "Professors",
+    "Biomedical Engineers"
+}
+
+job_skill_counts = {job: len(set(skills)) for job, skills in occupation_skills.items()}
+
+top_500_jobs = sorted(job_skill_counts.items(), key=lambda x: x[1], reverse=True)[:250]
+top_500_job_titles = {job for job, _ in top_500_jobs}
+
+final_jobs_to_use = top_500_job_titles.union(MOST_IMPORTANT_JOBS)
+
 profiles = []
 
 for job_title, skills in occupation_skills.items():
-    if len(skills) < MIN_SKILLS_REQUIRED:
+    if job_title not in final_jobs_to_use:
+        continue
+
+    if len(skills) < MIN_SKILLS_REQUIRED and job_title not in MOST_IMPORTANT_JOBS:
         continue
 
     top_skills = list(set(skills))[:10]
