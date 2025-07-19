@@ -5,10 +5,10 @@ from xgboost import XGBClassifier
 from sklearn.metrics import classification_report, accuracy_score
 import joblib
 
-df = pd.read_csv("final_dataset.csv")
+df = pd.read_csv("final_dataset_with_skill_clusters.csv")
 
-X = df.drop(columns=["label", "cluster"])
-y = df["cluster"].astype(str)
+X = df.drop(columns=["label", "skill_cluster"])
+y = df["skill_cluster"].astype(str)
 
 le = LabelEncoder()
 y_encoded = le.fit_transform(y)

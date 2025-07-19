@@ -3,13 +3,13 @@ import numpy as np
 from P1_predict_career import predict_top_careers
 from sklearn.utils import shuffle
 
-DATA_PATH = "final_dataset.csv"
-N_SAMPLES = 300
-TOP_K_JOBS = 6
-TOP_K_CLUSTERS = 3
+DATA_PATH = "final_dataset_with_skill_clusters.csv"
+N_SAMPLES = 100
+TOP_K_JOBS = 10
+TOP_K_CLUSTERS = 4
 
 df = pd.read_csv(DATA_PATH)
-df = shuffle(df, random_state=29).reset_index(drop=True)
+df = shuffle(df, random_state=53).reset_index(drop=True)
 
 correct_count = 0
 samples_checked = 0
@@ -17,7 +17,7 @@ samples_checked = 0
 for i in range(N_SAMPLES):
     row = df.iloc[i]
     true_job = row["label"]
-    input_features = row.drop(labels=["label", "cluster"]).to_dict()
+    input_features = row.drop(labels=["label", "skill_cluster"]).to_dict()
 
     try:
         predictions = predict_top_careers(input_features, top_k_clusters=TOP_K_CLUSTERS, top_k_jobs=TOP_K_JOBS)

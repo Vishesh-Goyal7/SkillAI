@@ -7,13 +7,13 @@ from sklearn.preprocessing import LabelEncoder
 import joblib
 import os
 
-DATA_PATH = "final_dataset.csv"
+DATA_PATH = "final_dataset_with_skill_clusters.csv"
 SAVE_DIR = "cluster_specialisers/"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 df = pd.read_csv(DATA_PATH)
 
-clusters = df["cluster"].unique()
+clusters = df["skill_cluster"].unique()
 
 class ClusterSpecialiser(nn.Module):
     def __init__(self, input_dim, output_dim):
@@ -34,8 +34,8 @@ class ClusterSpecialiser(nn.Module):
 for cluster_id in clusters:
     print(f"\n🔧 Training model for Cluster {cluster_id}...")
 
-    df_c = df[df["cluster"] == cluster_id]
-    X = df_c.drop(columns=["label", "cluster"])
+    df_c = df[df["skill_cluster"] == cluster_id]
+    X = df_c.drop(columns=["label", "skill_cluster"])
     y = df_c["label"]
 
     le = LabelEncoder()

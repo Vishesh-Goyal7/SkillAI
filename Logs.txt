@@ -44,6 +44,10 @@
 18-07-2025 03:58:31:
         2.10) Sixth attempt : 
             2.10.1) Going to use the latest xgb model that gave 35% accuracy as the base model to select top three clusters. Then, we will train 7 dnn models that specialise in each cluster to predict 2 jobs per cluster. 
+            2.10.2) Getting a good accuracy ranging from 58% - 65% for 4 clusters and 10 jobs each. 
+        2.11) Seventh attempt : 
+            2.11.1) Make clusters based on the necessary clusters and ran the brain once again. Didn't have much hope of improvement. 
+            2.11.2) Got a whoppingly high accuracy of 69% - 82%
             
             
 
