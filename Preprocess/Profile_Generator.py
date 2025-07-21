@@ -52,7 +52,7 @@ MOST_IMPORTANT_JOBS = {
 
 job_skill_counts = {job: len(set(skills)) for job, skills in occupation_skills.items()}
 
-top_500_jobs = sorted(job_skill_counts.items(), key=lambda x: x[1], reverse=True)[:250]
+top_500_jobs = sorted(job_skill_counts.items(), key=lambda x: x[1], reverse=True)[:500]
 top_500_job_titles = {job for job, _ in top_500_jobs}
 
 final_jobs_to_use = top_500_job_titles.union(MOST_IMPORTANT_JOBS)
@@ -84,7 +84,7 @@ for job_title, skills in occupation_skills.items():
 
 if profiles:
     df = pd.DataFrame(profiles).fillna(0)
-    df.to_csv("../Phase1_Model_Creation/career_profiles.csv", index=False)
+    df.to_csv("../Operation_brain/career_profiles.csv", index=False)
     print(f"✅ Total profiles: {len(df)}  |  Columns: {len(df.columns)}")
 else:
     print("⚠️ No profiles generated. Try lowering MIN_SKILLS_REQUIRED or check data files.")

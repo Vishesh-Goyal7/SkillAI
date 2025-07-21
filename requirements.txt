@@ -6,3 +6,5 @@ matplotlib
 sentence-transformers
 shap
 captum
+ibm-watsonx-ai
+dotenv

@@ -1,112 +1,112 @@
 {
-  "Non-Destructive Testing Specialists": {
-    "Time Management": 1.1918,
-    "Science": 0.2354,
-    "edu_Masters": 0.1287,
-    "Instructing": -0.1123,
-    "Mathematics": -0.1051,
-    "Service Orientation": 0.0744,
-    "Systems Evaluation": 0.0741,
-    "Quality Control Analysis": -0.0451,
-    "Operations Monitoring": -0.009
+  "Oral and Maxillofacial Surgeons": {
+    "Operations Analysis": 1.734,
+    "Instructing": -0.8818,
+    "edu_Bachelors": 0.3195,
+    "Coordination": 0.256,
+    "Critical Thinking": 0.2545,
+    "Management of Personnel Resources": -0.1926,
+    "Persuasion": 0.1406,
+    "Time Management": 0.1181,
+    "Systems Evaluation": 0.0871
   },
-  "Fuel Cell Engineers": {
-    "Time Management": 1.11,
-    "Quality Control Analysis": -0.2049,
-    "Operations Monitoring": -0.1828,
-    "Service Orientation": 0.178,
-    "Instructing": 0.1395,
-    "Science": 0.1052,
-    "Mathematics": -0.0898,
-    "edu_Masters": -0.0545,
-    "Systems Evaluation": -0.0066
+  "Database Administrators": {
+    "Operations Analysis": 2.0489,
+    "Systems Evaluation": 1.1801,
+    "Management of Personnel Resources": -1.0267,
+    "Time Management": -0.8636,
+    "edu_Bachelors": 0.6365,
+    "Critical Thinking": 0.3021,
+    "Instructing": -0.2219,
+    "Coordination": -0.1952,
+    "Persuasion": -0.1689
   },
-  "Food Scientists and Technologists": {
-    "edu_Masters": 1.3081,
-    "Mathematics": 0.4544,
-    "Quality Control Analysis": 0.4365,
-    "Science": 0.3055,
-    "Instructing": 0.2796,
-    "Time Management": -0.1418,
-    "Service Orientation": 0.1275,
-    "Operations Monitoring": 0.0386,
-    "Systems Evaluation": 0.0336
+  "Media Programming Directors": {
+    "Management of Personnel Resources": 0.9171,
+    "edu_Bachelors": 0.6836,
+    "Systems Evaluation": 0.3626,
+    "Critical Thinking": 0.1688,
+    "Persuasion": -0.138,
+    "Operations Analysis": 0.1039,
+    "Instructing": -0.1039,
+    "Coordination": -0.0925,
+    "Time Management": -0.0424
   },
-  "Environmental Economists": {
-    "edu_Masters": 0.9558,
-    "Operations Monitoring": 0.7674,
-    "Mathematics": 0.4896,
-    "Science": -0.4888,
-    "Quality Control Analysis": 0.2773,
-    "Instructing": 0.2416,
-    "Service Orientation": 0.2367,
-    "Systems Evaluation": -0.1788,
-    "Time Management": 0.0117
+  "Foresters": {
+    "edu_Bachelors": 0.6863,
+    "Management of Personnel Resources": 0.6594,
+    "Operations Analysis": 0.1694,
+    "Systems Evaluation": -0.1422,
+    "Coordination": -0.1368,
+    "Critical Thinking": 0.0982,
+    "Instructing": -0.0717,
+    "Time Management": 0.0324,
+    "Persuasion": -0.0281
   },
-  "Mining and Geological Engineers, Including Mining Safety Engineers": {
-    "edu_Masters": 1.0055,
-    "Operations Monitoring": 0.8403,
-    "Time Management": 0.5577,
-    "Quality Control Analysis": 0.1376,
-    "Instructing": 0.1232,
-    "Mathematics": 0.0582,
-    "Service Orientation": 0.0312,
-    "Science": 0.0109,
-    "Systems Evaluation": 0.0024
+  "Veterinarians": {
+    "edu_Bachelors": 1.5928,
+    "Management of Personnel Resources": 1.2966,
+    "Time Management": 0.6216,
+    "Instructing": -0.62,
+    "Systems Evaluation": 0.5681,
+    "Operations Analysis": -0.4803,
+    "Coordination": -0.2053,
+    "Persuasion": 0.1085,
+    "Critical Thinking": 0.0898
   },
-  "Computer Systems Engineers/Architects": {
-    "edu_Masters": 0.9806,
-    "Operations Monitoring": 0.9442,
-    "Time Management": 0.2481,
-    "Science": 0.1533,
-    "Service Orientation": 0.1404,
-    "Quality Control Analysis": 0.08,
-    "Instructing": 0.0684,
-    "Systems Evaluation": -0.0594,
-    "Mathematics": -0.003
+  "Medical Dosimetrists": {
+    "edu_Bachelors": 1.3357,
+    "Management of Personnel Resources": 1.1831,
+    "Instructing": -0.4169,
+    "Operations Analysis": -0.2484,
+    "Time Management": 0.2361,
+    "Critical Thinking": 0.176,
+    "Systems Evaluation": -0.09,
+    "Persuasion": 0.0829,
+    "Coordination": -0.0509
   },
-  "Occupational Health and Safety Specialists": {
-    "Science": -1.4737,
-    "edu_Masters": 1.2029,
-    "Operations Monitoring": 1.1919,
-    "Mathematics": 0.6918,
-    "Time Management": -0.5113,
-    "Systems Evaluation": 0.472,
-    "Instructing": 0.27,
-    "Quality Control Analysis": 0.2644,
-    "Service Orientation": -0.0229
+  "Treasurers and Controllers": {
+    "edu_Bachelors": 1.6522,
+    "Management of Personnel Resources": 1.564,
+    "Critical Thinking": -0.3323,
+    "Instructing": 0.3184,
+    "Systems Evaluation": -0.265,
+    "Persuasion": -0.1302,
+    "Operations Analysis": 0.109,
+    "Time Management": -0.1075,
+    "Coordination": 0.0856
   },
-  "Compensation and Benefits Managers": {
-    "edu_Masters": 1.4434,
-    "Operations Monitoring": -0.8156,
-    "Mathematics": 0.7813,
-    "Systems Evaluation": 0.6285,
-    "Science": -0.6172,
-    "Instructing": 0.2707,
-    "Time Management": 0.1467,
-    "Service Orientation": -0.0945,
-    "Quality Control Analysis": -0.031
+  "Architects, Except Landscape and Naval": {
+    "Management of Personnel Resources": 2.1096,
+    "edu_Bachelors": -0.5118,
+    "Persuasion": 0.4381,
+    "Systems Evaluation": 0.3121,
+    "Coordination": -0.2287,
+    "Operations Analysis": 0.1376,
+    "Critical Thinking": -0.1351,
+    "Instructing": -0.0556,
+    "Time Management": -0.0303
   },
-  "Financial Managers": {
-    "Mathematics": 2.3032,
-    "Instructing": -1.9895,
-    "edu_Masters": 1.369,
-    "Systems Evaluation": 0.5987,
-    "Operations Monitoring": -0.4315,
-    "Science": -0.3393,
-    "Service Orientation": -0.2021,
-    "Time Management": -0.0785,
-    "Quality Control Analysis": 0.0639
+  "First-Line Supervisors of Farming, Fishing, and Forestry Workers": {
+    "Management of Personnel Resources": 1.3372,
+    "edu_Bachelors": 0.8322,
+    "Instructing": -0.5831,
+    "Systems Evaluation": -0.4999,
+    "Operations Analysis": -0.1916,
+    "Persuasion": -0.1101,
+    "Critical Thinking": 0.0901,
+    "Coordination": 0.0736,
+    "Time Management": 0.0331
   },
-  "Advertising and Promotions Managers": {
-    "Mathematics": 1.8174,
-    "Instructing": -1.7814,
-    "edu_Masters": 1.3418,
-    "Systems Evaluation": 0.8165,
-    "Science": -0.6167,
-    "Service Orientation": -0.4021,
-    "Operations Monitoring": -0.3671,
-    "Quality Control Analysis": 0.1202,
-    "Time Management": -0.0915
+  "Elevator and Escalator Installers and Repairers": {
+    "Management of Personnel Resources": -1.1507,
+    "edu_Bachelors": 0.6013,
+    "Instructing": 0.5822,
+    "Critical Thinking": 0.2884,
+    "Time Management": -0.2535,
+    "Systems Evaluation": 0.2248,
+    "Coordination": 0.1751,
+    "Operations Analysis": 0.1185,
+    "Persuasion": 0.1025
   }
 }
