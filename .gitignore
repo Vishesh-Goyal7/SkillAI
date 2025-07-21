@@ -1,3 +1,8 @@
 venv/
 Dataset/
 Operation_brain/.env
+Operation_brain/__pycache__
+backend/__pycache__
+*.json
+*.env
+backend/node_modules

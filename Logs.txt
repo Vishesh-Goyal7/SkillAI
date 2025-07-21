@@ -57,7 +57,13 @@
         3.1) Chapter A : 
             3.1.1) Creating the explanation values using captum to generate numeric values. Successfully completed. 
         3.2) Chapter B : 
-            3.1.2) 
+            3.1.2) Creating a human readable convincing report for the explanation values. Successfully completed. 
+
+        PHASE 2 COMPLETED SUCCESSFULLY
+
+22-07-2025 03:05:23 : 
+    4) Phase 3 initialised : 
+        4.1) Creating a backend that can run the model. 
             
             
 
