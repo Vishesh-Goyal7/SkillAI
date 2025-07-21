@@ -5,3 +5,4 @@ joblib
 matplotlib 
 sentence-transformers
 shap
+captum

@@ -24,7 +24,7 @@ class ClusterSpecialiser(nn.Module):
     def forward(self, x):
         return self.model(x)
 
-def predict_top_careers(user_input: pd.DataFrame, top_k_clusters=3, top_k_jobs=2):
+def predict_top_careers(user_input: pd.DataFrame, top_k_clusters=5, top_k_jobs=2):
     if isinstance(user_input, dict):
         user_input = pd.DataFrame([user_input])
     

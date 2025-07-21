@@ -1,7 +1,7 @@
 17-07-2025 00:56:34:
     1) Begins the project. Current plan
         1.1) Phase 1 : Create the main brain, the main lifeline of the model, the recommendation model to find career choice. 
-        1.2) Phase 2 : Creating a SHAP explanation and linking it to a generative AI model that can create explanations and give it in the form of human readable text to make it understandable. 
+        1.2) Phase 2 : Creating explanation and linking it to a generative AI model that can create explanations and give it in the form of human readable text to make it understandable. 
         1.3) Phase 3 : Creating a backend that is capable of accepting the user input and running the model to generate and send the results. 
         1.4) Phase 4 : Create a smooth frontend that can access this backend to take the input and show the results. 
 
@@ -48,6 +48,14 @@
         2.11) Seventh attempt : 
             2.11.1) Make clusters based on the necessary clusters and ran the brain once again. Didn't have much hope of improvement. 
             2.11.2) Got a whoppingly high accuracy of 69% - 82%
+
+        PHASE 1 COMPLETED SUCCESSFULLY
+
+
+21-07-2025 23:33:54 : 
+    3) Phase 2 initialised : 
+        3.1) First attempt : 
+            3.1.1) 
             
             
 
