@@ -6,6 +6,7 @@ const { execFile } = require("child_process");
 
 const app = express();
 const PORT = process.env.PORT;
+app.use(express.json());
 
 const PYTHON_PATH = "../venv/bin/python3.10";
 
@@ -45,6 +46,31 @@ function runPythonScripts(req, res) {
 }
 
 app.get("/process", runPythonScripts);
+
+app.get("/start", (req, res) => {
+  const filesToDelete = ["input.json"];
+  for (let file of filesToDelete) {
+    const fPath = path.join(__dirname, file);
+    if (fs.existsSync(fPath)) fs.unlinkSync(fPath);
+  }
+  return res.status(200).json({"message":"files cleared"});
+})
+
+app.post("/input", (req, res) => {
+  const data = req.body;
+  if (!data || Object.keys(data).length === 0) {
+    return res.status(400).json({ error: "No input data provided." });
+  }
+
+  const inputPath = path.join(__dirname, "input.json");
+
+  try {
+    fs.writeFileSync(inputPath, JSON.stringify(data, null, 2));
+    return res.status(200).json({ message: "✅ input.json saved successfully." });
+  } catch (err) {
+    return res.status(500).json({ error: "Failed to write input.json", details: err.message });
+  }
+});
 
 app.listen(PORT, () => {
   console.log(`🚀 Backend running on http://localhost:${PORT}`);
