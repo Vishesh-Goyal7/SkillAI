@@ -30,7 +30,7 @@ SkillAI is an AI-assisted career recommendation engine designed to give a **care
 
 ---
 
-## Tech Stack
+## 📚 Tech Stack
 <p align="center">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height=70px width=auto>
     <img src="https://img.shields.io/badge/Pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" height=70px width=auto>
@@ -42,7 +42,7 @@ SkillAI is an AI-assisted career recommendation engine designed to give a **care
 
 --- 
 
-## Backend Walkthrough
+## 🧠 Backend Walkthrough
 - **Skill Selection :** Dynamically select selects as per your skill set from the frontend. 
 - **Career Cluster Finding :** The XGBoost model deployed on the backend first selects suitable cluster. 
 - **Career Picker :** DNN models specific to each cluster finds most suitable jobs from each cluster. 
@@ -51,7 +51,7 @@ SkillAI is an AI-assisted career recommendation engine designed to give a **care
 
 --- 
 
-## Folder Structure
+## 📂 Folder Structure
 ```
 SkillAI/
 |–– assets/                         # Contains all images
@@ -68,7 +68,7 @@ SkillAI/
 |–– frontend/                       # ReactJS based frontend
 |–– requirements.txt                # List of python libraries necessary to run the model
 |–– Operation_brain/
-|   |–– All trials at making the brain
+|   |–– All experimental trials during the foundational brain development
 |–– Preprocess/
 |–– |–– P1_Get_Unique.py            # List of all the unique jobs in the dataset
 |–– Logs.txt                        # My personal journey in making of this model
@@ -91,7 +91,7 @@ git clone https://github.com/Vishesh-Goyal7/SkillAI
 cd SkillAI
 ```
 
-#### Vitual Environment Setup
+#### 🏕️ Vitual Environment Setup
 ```bash
 python3.10 -m venv venv  #(Do this in the)
 source venv/bin/activate
@@ -136,3 +136,13 @@ MIT License © 2025 Vishesh Goyal
 [GitHub](https://github.com/Vishesh-Goyal7) | [LinkedIn](https://linkedin.com/in/vishesh-goyal-2k5) | [Personal Portfolio](https://visheshverse.com)
 
 ---
+
+## 🧠 Built With Grit & Vision
+
+This project represents days of engineering, experimentation, and perseverance. If SkillAI helped you, inspired you, or made you think — I’d love to hear from you.
+
+Feel free to ⭐ the repo or connect with me at visheshvishu1@outlook.com
+
+Stay curious.
+
+— Vishesh
