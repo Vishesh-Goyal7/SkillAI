@@ -4,6 +4,7 @@
         1.2) Phase 2 : Creating explanation and linking it to a generative AI model that can create explanations and give it in the form of human readable text to make it understandable. 
         1.3) Phase 3 : Creating a backend that is capable of accepting the user input and running the model to generate and send the results. 
         1.4) Phase 4 : Create a smooth frontend that can access this backend to take the input and show the results. 
+        1.5) Phase 5 : Deployment on the internet
 
 17-07-2025 01:39:22:
 
@@ -64,6 +65,20 @@
 22-07-2025 03:05:23 : 
     4) Phase 3 initialised : 
         4.1) Creating a backend that can run the model. 
+    
+    PHASE 3 COMPLETED SUCCESSFULLY
+
+22-07-2025 22:54:11 :
+    5) Phase 4 initialised : 
+        5.1) Creating a suitable web UI to host this application over the internet
+
+        PHASE 4 COMPLETED SUCCESSFULLY
+
+27-07-2025 01:25:31 : 
+    6) Phase 5 initialised : 
+        6.1) Deploying the website on the internet
+
+        PHASE 5 COMPLETED SUCCESSFULLY
             
             
 
