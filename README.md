@@ -132,17 +132,13 @@ MIT License © 2025 Vishesh Goyal
 
 ## 🙋‍♂️ Author
 
-**Vishesh Goyal**  
-[GitHub](https://github.com/Vishesh-Goyal7) | [LinkedIn](https://linkedin.com/in/vishesh-goyal-2k5) | [Personal Portfolio](https://visheshverse.com)
-
----
-
-## 🧠 Built With Grit & Vision
-
 This project represents days of engineering, experimentation, and perseverance. If SkillAI helped you, inspired you, or made you think — I’d love to hear from you.
 
 Feel free to ⭐ the repo or connect with me at visheshvishu1@outlook.com
 
 Stay curious.
 
-— Vishesh
+**Vishesh Goyal**  
+[GitHub](https://github.com/Vishesh-Goyal7) | [LinkedIn](https://linkedin.com/in/vishesh-goyal-2k5) | [Personal Portfolio](https://visheshverse.com)
+
+---
