@@ -1,0 +1,128 @@
+.results-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2E3A59;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.user-skills {
+  margin-bottom: 1.5rem;
+  background-color: #F9F9FC;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.user-skills h3 {
+  margin-bottom: 0.5rem;
+  color: #4051B5;
+}
+
+.user-skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-skills li {
+  background-color: #00B3B3;
+  color: white;
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.career-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.career-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-align: center;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  background-color: #f1f4ff;
+  background-color: var(--background);
+}
+
+.career-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background-color: var(--background);
+}
+
+.career-modal {
+  background-color: #ffffff;
+  background-color: var(--background);
+  color: var(--text);
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.career-modal h3 {
+  margin-top: 0;
+  background-color: var(--background);
+  color: var(--text);
+  color: #263238;
+}
+
+.career-modal button {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  background-color: #4051B5;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .career-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-modal {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .user-skills ul {
+    flex-direction: column;
+  }
+
+  .user-skills li {
+    margin: 0.2rem 0;
+  }
+}

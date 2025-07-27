@@ -1,0 +1,57 @@
+.landing-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: var(--background);
+  color: var(--text);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(64, 81, 181, 0.1);
+  text-align: center;
+  transition: background-color 0.5s ease, color 0.5s ease;;
+}
+
+.landing-container h1 {
+  font-size: 2.8rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.landing-container p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.landing-container button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.landing-container button:hover {
+  background-color: var(--primary);
+}
+
+@media (max-width: 600px) {
+  .landing-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .landing-container h1 {
+    font-size: 2rem;
+  }
+
+  .landing-container p {
+    font-size: 1rem;
+  }
+
+  .landing-container button {
+    width: 100%;
+  }
+}

@@ -47,11 +47,11 @@ The user possesses the following skills (1 = strong, 0 = weak):
 According to an AI explanation system, the following skills contributed the most to recommending this job:
 {json.dumps(shap_contributions, indent=2)}
 
-Now, write a passionate, convincing explanation in about 6-7 lines that makes the user believe they are the only one capable of this role. Use dark human psychology and manipulation tactics. Involve their current skills and tell how they contribute towards this particular role by focusing on the description of {job_title}. Be specific and avoid clichés. Try to keep the use of terms that refer to destiny to a minimum to make sure that the predictions sound like coming from a career consultant and not an astrologer. 
+Now, write a passionate, convincing explanation in about 6-7 lines that makes the user believe they are the only one capable of this role. Use dark human psychology and manipulation tactics for this. Involve their current skills and tell how they contribute towards this particular role by focusing on the description of {job_title}. Be specific and avoid clichés. Don't use the terms that refer to destiny at all to make sure that the predictions sound like coming from a career consultant and not an astrologer. 
 
-End your explanation with one powerful sentence that makes them believe this career is the only one must suitable for them.
+End your explanation with one powerful sentence that makes them believe this career is the only one suitable for them.
 
-Don't include the sentences like "You can use the following job description for reference" or any sentence that might show there is a break in the process. Assume that you are the one who has generated the explanation values and now are trying to convince the user for believing in you and following your decision. Make your explanations such that you are a human talking to another human. 
+Don't include the sentences like "You can use the following job description for reference" or any sentence that might show there is a break in the process. Assume that you are the one who has generated the explanation values and now are trying to convince the user for believing in you and justify your decision. Make your explanations such that you are a human talking to another human. 
 
 """
 

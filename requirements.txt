@@ -3,8 +3,6 @@ xgboost
 scikit-learn
 joblib
 matplotlib 
-sentence-transformers
-shap
 captum
 ibm-watsonx-ai
 dotenv

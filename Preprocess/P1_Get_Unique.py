@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("../Phase1_Model_Creation/career_profiles.csv")
+df = pd.read_csv("../backend/final_dataset_with_skill_clusters.csv")
 df = df["label"]
 
 jobs = []

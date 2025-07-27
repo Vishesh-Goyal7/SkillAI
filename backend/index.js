@@ -3,10 +3,13 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const { execFile } = require("child_process");
+const csv = require('csv-parser');
+const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT;
 app.use(express.json());
+app.use(cors());
 
 const PYTHON_PATH = "../venv/bin/python3.10";
 
@@ -71,6 +74,30 @@ app.post("/input", (req, res) => {
     return res.status(500).json({ error: "Failed to write input.json", details: err.message });
   }
 });
+
+app.get('/list', (req, res) => {
+  const csvFilePath = 'final_dataset_with_skill_clusters.csv';
+  const skipColumns = ['label', 'skill_cluster']; 
+  let responseSent = false;
+
+  const stream = fs.createReadStream(csvFilePath)
+    .pipe(csv())
+    .on('headers', (csvHeaders) => {
+      const filteredHeaders = csvHeaders.filter(header => !skipColumns.includes(header));
+      if (!responseSent) {
+        res.json({ columns: filteredHeaders });
+        responseSent = true;
+        stream.destroy(); 
+      }
+    })
+    .on('error', (err) => {
+      if (!responseSent) {
+        res.status(500).json({ error: 'Failed to read CSV file', details: err.message });
+        responseSent = true;
+      }
+    });
+});
+
 
 app.listen(PORT, () => {
   console.log(`🚀 Backend running on http://localhost:${PORT}`);

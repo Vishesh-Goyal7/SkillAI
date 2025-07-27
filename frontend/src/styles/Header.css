@@ -1,0 +1,91 @@
+:root {
+  --primary: #4051B5;
+  --accent: #00B3B3;
+  --background: #F9F9FC;
+  --text: #2E3A59;
+}
+
+[data-theme='dark'] {
+  --background: #121212;
+  --text: #EEEEEE;
+}
+
+.header {
+  background-color: var(--background);
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--accent);
+  flex-wrap: wrap;
+  transition : background-color 0.3s ease, color 0.3s ease;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.toggle-button,
+.dev-button {
+  padding: 0.4rem 1rem;
+  border: none;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.toggle-button {
+  background-color: var(--primary);
+  color: white;
+}
+
+.toggle-button:hover {
+  background-color: var(--accent);
+}
+
+.dev-button {
+  background-color: var(--accent);
+  color: white;
+}
+
+.dev-button:hover {
+  background-color: var(--primary);
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .toggle-button,
+  .dev-button {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
