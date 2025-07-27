@@ -36,6 +36,8 @@ SkillAI is an AI-assisted career recommendation engine designed to give a **care
     <img src="https://img.shields.io/badge/Pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" height=70px width=auto>
     <img src="https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white" height=70px width=auto>
     <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" height=70px width=auto>
+    <img src="https://img.shields.io/badge/Captum-20232A?style=for-the-badge&logo=PyTorch&logoColor=white" height=70px>
+    <img src="https://img.shields.io/badge/IBM%20WatsonX-AE3B70?style=for-the-badge&logo=ibm&logoColor=white" height=70px>
 </p>
 
 --- 
