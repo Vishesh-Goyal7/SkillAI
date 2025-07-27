@@ -3,6 +3,9 @@ Dataset/
 Operation_brain/.env
 Operation_brain/__pycache__
 backend/__pycache__
-*.json
+input.json
+explanations.json
+explanation_report.json
+results.json
 *.env
 backend/node_modules
